@@ -147,6 +147,7 @@ document.getElementById('save').addEventListener('click', async (e) => {
                         });
                 
                         await updateDoc(userDocRef, updateData);
+                        document.getElementById('mediform').reset();
                         console.log('Document updated successfully!');
                     } else {
                         // DoctorName doesn't match, create a new document including the file download URL
@@ -163,6 +164,7 @@ document.getElementById('save').addEventListener('click', async (e) => {
                         };
                 
                         await setDoc(userDocRef, newData);
+                        document.getElementById('mediform').reset();
                         console.log('New document created successfully!');
                     }
                 } else {
@@ -180,6 +182,7 @@ document.getElementById('save').addEventListener('click', async (e) => {
                     };
                 
                     await setDoc(userDocRef, newData);
+                    document.getElementById('mediform').reset();
                     console.log('New document created successfully!');
                 }
             } catch (error) {
@@ -215,6 +218,7 @@ document.getElementById('save').addEventListener('click', async (e) => {
                         });
                 
                         await updateDoc(userDocRef, updateData);
+                        document.getElementById('mediform').reset();
                         console.log('Document updated successfully!');
                     } else {
                         // DoctorName doesn't match, create a new document including the file download URL
@@ -231,6 +235,7 @@ document.getElementById('save').addEventListener('click', async (e) => {
                         };
                 
                         await setDoc(userDocRef, newData);
+                        document.getElementById('mediform').reset();
                         console.log('New document created successfully!');
                     }
                 } else {
@@ -248,6 +253,7 @@ document.getElementById('save').addEventListener('click', async (e) => {
                     };
                 
                     await setDoc(userDocRef, newData);
+                    document.getElementById('mediform').reset();
                     console.log('New document created successfully!');
                 }
             } catch (error) {
