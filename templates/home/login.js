@@ -47,6 +47,7 @@ document.getElementById('login-button').addEventListener('click', () => {
 document.getElementById("doctor_redirect").addEventListener("click", function(e) {
   e.preventDefault();
   localStorage.setItem('doctorName', document.getElementById('dname').value);
+  document.getElementById('doctor-login-form').reset();
   window.location.href = "../doctor/doctor.html";
 });
 
@@ -76,7 +77,7 @@ document.getElementById('patient_redirect').addEventListener('click', async func
         localStorage.setItem('nodeWithDetails', nodeId);
         localStorage.setItem('patientName', patientName.value);
         localStorage.setItem('patientId', patientId.value);
-        
+        document.getElementById('patient-login-form').reset();
         window.location.href = "./patientlogs.html";
       } else {
         alert("Invalid Credentials");
