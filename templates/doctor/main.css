@@ -1,0 +1,19 @@
+body{
+    background-color: #F1F1F1;
+}
+h1{
+    padding: 1rem;
+}
+form{
+    padding: 2rem;
+    background-color: #F1F1F1;
+    font-weight: bold;
+}
+header{
+    background-color: #0F3D3E;
+}
+#sub, #save{
+    background-color: #0F3D3E;
+    color: #F1F1F1;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MediBase</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <h1><span style="color: #E2DCC8;">Medi</span><span style="color: #F1F1F1;">Base</span></h1>
+        </header>
+        <form action="http://127.0.0.1:5000/report-submit" method="post" enctype="multipart/form-data" id="mediform">
+          <h2 id="drname"></h2><br>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-outline">
+                  <label class="form-label" for="pid">Patient ID</label>
+                  <input type="text" id="pid" name="pid" class="form-control" placeholder="MB4587" autocomplete="off" required/>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-outline">
+                  <label class="form-label" for="pname">Patient Name</label>
+                  <input type="text" id="pname" name="pname" class="form-control" placeholder="Matthew Davis" autocomplete="off" disabled required/>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                  <label class="form-label" for="rep">Report</label>
+                  <textarea class="form-control" id="rep" name="rep" rows="7" placeholder="Symptoms"></textarea><br>
+                  <label class="form-label" for="upselect">Upload</label>
+                  <select class="form-select" id="upselect" name="upselect">
+                      <option value="0">None</option>
+                      <option value="1">Chest X-Ray</option>
+                      <option value="2">Brain CT Scan</option>
+                  </select>
+                  <br>
+                  <input type="file" class="form-control" id="upfile" name="upfile"/><br>
+                  <button type="submit" class="btn" id="sub">Submit</button>
+
+                  <script>
+
+                  </script>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="rint">Report Analysis</label>
+                        <textarea class="form-control" id="rint" name="rint" rows="7"></textarea><br>
+                        <label class="form-label" for="uint">Upload Analysis</label>
+                        <textarea class="form-control" id="uint" name="uint" rows="7"></textarea><br>
+                        <button type="submit" class="btn" id="save">Save</button>
+                    </div>              
+                </div>
+            </div> 
+          </form>
+          <script type="module" src="dtr.js"></script>
+        </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="reg.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>
+          <a href="index.html"><img src="iicon.png" width="60px" height="60px"  id="icon"></a>
+          <span style="color: #E2DCC8;">Medi</span><span style="color: #F1F1F1;">Base</span></h1>
+          <a class="navl" href="reg.html">Register</a>
+          <a href="index.html#about" class="navl">About</a>
+    </header>
+    <div class="back"></div>
+    <div class="registration-form">
+        <header>
+            <h1 style="text-align: center;">Register</h1>
+            <p style="text-align: center;">Please enter the patient details below.</p>
+        </header>
+        <form>
+            <div class="input-section name-section" id="name">
+                <input class="name form-control" type="text" placeholder="PATIENT NAME" autocomplete="off"/>
+                <div class="animated-button"><span class="icon-user"><i class="bx bx-user"></i></span><span class="next-button name"><i class="bx bx-up-arrow-alt"></i></span></div>
+            </div>
+            <div class="input-section email-section folded" id="email">
+                <input class="email form-control" type="email" placeholder="EMAIL" autocomplete="off"/>
+                <div class="animated-button"><span class="icon-paper-plane"><i class="bx bx-paper-plane"></i></span><span class="next-button email"><i class="bx bx-up-arrow-alt"></i></span></div>
+            </div>
+            <div class="input-section password-section folded" id="password">
+                <input class="password form-control" type="password" placeholder="PASSWORD"/>
+                <div class="animated-button"><span class="icon-lock"><i class="bx bx-lock"></i></span><span class="next-button password"><i class="bx bx-up-arrow-alt"></i></span></div>
+            </div> 
+            <div class="input-section repeat-password-section folded">
+                <input class="repeat-password form-control" type="password" placeholder="REPEAT YOUR PASSWORD"/>
+                <div class="animated-button">
+                    <span class="icon-repeat-lock"><i class="bx bx-lock"></i></span>
+                    <span class="next-button repeat-password"><i class="bx bx-paper-plane"></i></span>
+                </div>
+            </div>
+            <div class="input-section phone-section folded" id="phone">
+                <input class="phone form-control" type="tel" placeholder="PATIENT-ID GIVEN BY HOSPITAL" autocomplete="off"/>
+                <div class="animated-button"><span class="icon-user"><i class="bx bx-phone"></i></span><span class="next-button phone"><i class="bx bx-up-arrow-alt"></i></span></div>
+            </div>
+            <div class="success"> 
+                <p>Registered!</p>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+    <script type="module" src="reg.js"></script>
+</body>
+</html>
