@@ -7,9 +7,12 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header>
-            <h1><span style="color: #E2DCC8;">Medi</span><span style="color: #F1F1F1;">Base</span></h1>
-        </header>
+      <header>
+        <h1>
+          <a href="index.html"><img src="iicon.png" width="60px" height="60px"  id="icon"></a>
+          <span style="color: #E2DCC8;">Medi</span><span style="color: #F1F1F1;">Base</span></h1>
+          <button class="navl" onclick="window.location.href='../home/index.html'">Logout</button>
+      </header>
         <form action="http://127.0.0.1:5000/report-submit" method="post" enctype="multipart/form-data" id="mediform">
           <h2 id="drname"></h2><br>
             <!-- 2 column grid layout with text inputs for the first and last names -->
