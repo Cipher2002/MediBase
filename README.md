@@ -19,10 +19,10 @@ To run the server
 ![App Screenshot](https://github.com/Cipher2002/MediBase/blob/main/images/architecture%20diagram.png)
 
 
-## The confusion matrix for the CNN model for image classification 
+## Confusion Matrix for Image Classification CNN Model
 ![App Screenshot](https://github.com/Cipher2002/MediBase/blob/main/images/cnn%20heat%20map.png)
 
-## The confusion matrix for the NLP model for predicting diseases through symptoms
+## Confusion Matrix for Predicting Diseases through Symptoms using NLP Model
 ![App Screenshot](https://github.com/Cipher2002/MediBase/blob/main/images/nlp%20heat%20map.png)
 
 ![App Screenshot](https://github.com/Cipher2002/MediBase/blob/main/images/Screenshot%20(1).png)
