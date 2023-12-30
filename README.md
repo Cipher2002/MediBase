@@ -14,7 +14,7 @@ To run the server
   python app.py
 ```
 
-## Screenshots
+## Architecture
 
 ![App Screenshot](https://github.com/Cipher2002/MediBase/blob/main/images/architecture%20diagram.png)
 
